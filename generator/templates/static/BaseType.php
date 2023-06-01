@@ -29,7 +29,7 @@ abstract class BaseType implements Type, ArrayAccess, JsonSerializable
 
     public function setProperty(string $property, $value)
     {
-        if ($value !== null && $value !== '') {
+        if ($value !== null) {
             $this->properties[$property] = $value;
         }
 
